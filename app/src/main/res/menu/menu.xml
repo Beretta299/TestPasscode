@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/setPassCode"
+    android:title="@string/existing_passcode"/>
+    <item android:id="@+id/unsetPassCode"
+        android:title="@string/unsert_passcode"/>
+</menu>

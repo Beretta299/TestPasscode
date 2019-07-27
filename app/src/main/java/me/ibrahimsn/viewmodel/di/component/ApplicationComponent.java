@@ -1,6 +1,7 @@
 package me.ibrahimsn.viewmodel.di.component;
 
 import android.app.Application;
+import android.content.Context;
 
 import javax.inject.Singleton;
 
@@ -13,9 +14,10 @@ import me.ibrahimsn.viewmodel.base.BaseApplication;
 import me.ibrahimsn.viewmodel.di.module.ActivityBindingModule;
 import me.ibrahimsn.viewmodel.di.module.ApplicationModule;
 import me.ibrahimsn.viewmodel.di.module.ContextModule;
+import me.ibrahimsn.viewmodel.di.module.DatabaseModule;
 
 @Singleton
-@Component(modules = {ContextModule.class, ApplicationModule.class, AndroidSupportInjectionModule.class, ActivityBindingModule.class})
+@Component(modules = {ContextModule.class, ApplicationModule.class, AndroidSupportInjectionModule.class, ActivityBindingModule.class, DatabaseModule.class})
 public interface ApplicationComponent extends AndroidInjector<DaggerApplication> {
 
     void inject(BaseApplication application);
@@ -24,6 +26,12 @@ public interface ApplicationComponent extends AndroidInjector<DaggerApplication>
     interface Builder {
         @BindsInstance
         Builder application(Application application);
+
+        Builder setDBModule(DatabaseModule dbModule);
+
         ApplicationComponent build();
     }
+
+
+
 }

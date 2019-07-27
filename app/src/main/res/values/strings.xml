@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">ViewModel</string>
+    <string name="wrong_passcode">Повторный код пароль введён неверно</string>
+    <string name="insert_passcode">Придумайте новый код-пароль:</string>
+    <string name="repeat_passcode">Повторите код-пароль:</string>
+    <string name="existing_passcode">Введите ваш код-пароль:</string>
+    <string name="update_passcode">Изменить код-пароль</string>
+    <string name="okay_button">Понятно</string>
+    <string name="unsert_passcode">Убрать код-пароль</string>
+    <string name="new_passcode">Новый код-пароль успешно установлен</string>
+    <string name="passcode_check">Проверка пройдена</string>
+    <string name="unset_passcode">Код-пароль убран</string>
+    <string name="passcode_input">Ввод код-пароля</string>
+
 </resources>

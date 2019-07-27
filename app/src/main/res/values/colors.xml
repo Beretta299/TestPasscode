@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorPrimary">#7797D2</color>
+    <color name="colorPrimaryDark">#7797D2</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="periwinkle_gray">#CFD7E3</color>
+    <color name="danube">#7797D2</color>
+    <color name="brink_pink">#F56881</color>
+    <color name="san_marino">#5073BA</color>
+    <color name="de_york">#84CA8F</color>
+    <color name="slate_gray">#717E92</color>
 </resources>

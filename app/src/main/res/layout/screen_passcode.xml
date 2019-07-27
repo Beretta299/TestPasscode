@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/pass1"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edittext_state_checker"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:ems="10"
+        android:fontFamily="@font/fira_sans_bold"
+        android:gravity="clip_horizontal|clip_vertical|center_horizontal|center_vertical"
+        android:inputType="number"
+        android:maxLength="2"
+        android:textColor="@color/san_marino"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toStartOf="@+id/pass2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <EditText
+        android:id="@+id/pass2"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edittext_state_checker"
+        android:cursorVisible="false"
+        android:ems="10"
+        android:fontFamily="@font/fira_sans_bold"
+        android:gravity="clip_horizontal|clip_vertical|center_horizontal|center_vertical"
+        android:inputType="number"
+        android:maxLength="2"
+        android:textColor="@color/san_marino"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toStartOf="@+id/pass3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/pass1"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <EditText
+        android:id="@+id/pass3"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edittext_state_checker"
+        android:cursorVisible="false"
+        android:ems="10"
+        android:fontFamily="@font/fira_sans_bold"
+        android:gravity="clip_horizontal|clip_vertical|center_horizontal|center_vertical"
+        android:inputType="number"
+        android:maxLength="2"
+        android:textColor="@color/san_marino"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toStartOf="@+id/pass4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/pass2"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <EditText
+        android:id="@+id/pass4"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/edittext_state_checker"
+        android:cursorVisible="false"
+        android:ems="10"
+        android:fontFamily="@font/fira_sans_bold"
+        android:gravity="clip_horizontal|clip_vertical|center_horizontal|center_vertical"
+        android:inputType="number"
+        android:maxLength="2"
+        android:textColor="@color/san_marino"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/pass3"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/firstLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <TextView
+        android:id="@+id/firstTV"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/click_checker"
+        android:clickable="true"
+        android:fontFamily="@font/fira_sans_bold"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="@color/san_marino"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toStartOf="@+id/secondTV"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/firstLevel" />
+
+    <TextView
+        android:id="@+id/secondTV"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/click_checker"
+        android:clickable="true"
+        android:fontFamily="@font/fira_sans_bold"
+        android:gravity="center"
+        android:text="2"
+        android:textColor="@color/san_marino"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toStartOf="@+id/thirdTV"
+        app:layout_constraintStart_toEndOf="@+id/firstTV"
+        app:layout_constraintTop_toTopOf="@+id/firstLevel" />
+
+    <TextView
+        android:id="@+id/thirdTV"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/click_checker"
+        android:clickable="true"
+        android:fontFamily="@font/fira_sans_bold"
+        android:gravity="center"
+        android:text="3"
+        android:textColor="@color/san_marino"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/secondTV"
+        app:layout_constraintTop_toTopOf="@+id/firstLevel" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/secondLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.6" />
+
+    <TextView
+        android:id="@+id/fourthTV"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/click_checker"
+        android:clickable="true"
+        android:fontFamily="@font/fira_sans_bold"
+        android:gravity="center"
+        android:text="4"
+        android:textColor="@color/san_marino"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toStartOf="@+id/fifthTV"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/secondLevel" />
+
+    <TextView
+        android:id="@+id/fifthTV"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/click_checker"
+        android:clickable="true"
+        android:fontFamily="@font/fira_sans_bold"
+        android:gravity="center"
+        android:text="5"
+        android:textColor="@color/san_marino"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toStartOf="@+id/sixthTV"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/fourthTV"
+        app:layout_constraintTop_toTopOf="@+id/secondLevel" />
+
+    <TextView
+        android:id="@+id/sixthTV"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/click_checker"
+        android:clickable="true"
+        android:fontFamily="@font/fira_sans_bold"
+        android:gravity="center"
+        android:text="6"
+        android:textColor="@color/san_marino"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/fifthTV"
+        app:layout_constraintTop_toTopOf="@+id/secondLevel" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/thirdLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.7" />
+
+    <TextView
+        android:id="@+id/seventhTV"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/click_checker"
+        android:clickable="true"
+        android:fontFamily="@font/fira_sans_bold"
+        android:gravity="center"
+        android:text="7"
+        android:textColor="@color/san_marino"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toStartOf="@+id/eighthTV"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/thirdLevel" />
+
+    <TextView
+        android:id="@+id/eighthTV"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/click_checker"
+        android:clickable="true"
+        android:fontFamily="@font/fira_sans_bold"
+        android:gravity="center"
+        android:text="8"
+        android:textColor="@color/san_marino"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toStartOf="@+id/ninthTV"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/seventhTV"
+        app:layout_constraintTop_toTopOf="@+id/thirdLevel" />
+
+    <TextView
+        android:id="@+id/ninthTV"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/click_checker"
+        android:clickable="true"
+        android:fontFamily="@font/fira_sans_bold"
+        android:gravity="center"
+        android:text="9"
+        android:textColor="@color/san_marino"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/eighthTV"
+        app:layout_constraintTop_toTopOf="@+id/thirdLevel" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/fourthLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8" />
+
+    <TextView
+        android:id="@+id/emptyTV"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/click_checker"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/san_marino"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toStartOf="@+id/nullTV"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/fourthLevel" />
+
+    <TextView
+        android:id="@+id/nullTV"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/click_checker"
+        android:clickable="true"
+        android:fontFamily="@font/fira_sans_bold"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="@color/san_marino"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toStartOf="@+id/deleteTV"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/emptyTV"
+        app:layout_constraintTop_toTopOf="@+id/fourthLevel" />
+
+    <ImageView
+        android:id="@+id/deleteTV"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/click_checker"
+        android:clickable="true"
+        android:gravity="center"
+        android:src="@drawable/ic_delete"
+        android:textColor="@color/san_marino"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/nullTV"
+        app:layout_constraintTop_toTopOf="@+id/fourthLevel" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/fira_sans"
+        android:text="@string/wrong_passcode"
+        android:textColor="@color/brink_pink"
+        app:layout_constraintBottom_toTopOf="@+id/firstTV"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pass1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/fira_sans_bold"
+        android:textAlignment="center"
+        android:textColor="@color/slate_gray"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:titleTextColor="@color/cardview_light_background"
+        app:collapseIcon="@drawable/ic_lock_outline_black_24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
